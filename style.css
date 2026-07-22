@@ -272,13 +272,16 @@ body{
 
     border-radius:10px;
 
-    box-shadow:
+    box-shadow:0 15px 40px rgba(0,0,0,.15);
 
-    0 15px 40px rgba(0,0,0,.15);
+    transition:1.3s ease;
 
-    transition:1.3s;
+    overflow:hidden;
 
-    z-index:4;
+    transform-origin:bottom center;
+
+    z-index:2; 
+        /* derrière la face avant */
 
 }
 
@@ -298,6 +301,10 @@ body{
 
     padding:25px;
 
+        overflow:hidden;
+
+transform-origin:bottom center;
+
 }
 
 .letter-content h1{
@@ -309,6 +316,9 @@ body{
     font-size:38px;
 
     text-align:center;
+        overflow:hidden;
+
+transform-origin:bottom center;
 
 }
 
@@ -321,6 +331,10 @@ body{
     color:#777;
 
     text-align:center;
+        overflow:hidden;
+
+transform-origin:bottom center;
+        
 
 }
 
@@ -432,6 +446,8 @@ transform:scale(1);
 
     transform:rotateX(180deg);
 
+    z-index:1;
+
 }
 
 #envelope.open .seal{
@@ -449,7 +465,13 @@ transform:scale(1);
 #envelope.open .letter{
 
     transform:
-    translateY(-190px);
+        translateY(-210px)
+        scale(1.02);
+
+    z-index:15;
+        overflow:hidden;
+
+transform-origin:bottom center;
 
 }
 
@@ -488,6 +510,9 @@ transform:scale(1);
         rgba(250,246,239,.95)
 
     );
+        overflow:hidden;
+
+transform-origin:bottom center;
 
 }
 
@@ -524,6 +549,9 @@ transform:scale(1);
     transform:rotate(25deg);
 
     animation:shine 5s infinite;
+        overflow:hidden;
+
+transform-origin:bottom center;
 
 }
 
@@ -610,18 +638,27 @@ left:180%;
     position:relative;
 
     z-index:5;
+        overflow:hidden;
+
+transform-origin:bottom center;
 
 }
 
 .letter-content h1{
 
     margin-bottom:15px;
+        overflow:hidden;
+
+transform-origin:bottom center;
 
 }
 
 .letter-content p{
 
     line-height:1.7;
+        overflow:hidden;
+
+transform-origin:bottom center;
 
 }
 
@@ -1485,18 +1522,27 @@ height:125px;
 .letter{
 
 height:170px;
+        overflow:hidden;
+
+transform-origin:bottom center;
 
 }
 
 .letter-content h1{
 
 font-size:28px;
+        overflow:hidden;
+
+transform-origin:bottom center;
 
 }
 
 .letter-content p{
 
 font-size:15px;
+        overflow:hidden;
+
+transform-origin:bottom center;
 
 }
 
