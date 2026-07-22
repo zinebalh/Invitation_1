@@ -3,278 +3,245 @@
 
 <head>
 
-<meta charset="UTF-8">
+    <meta charset="UTF-8">
 
-<meta name="viewport"
-content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Une Parenthèse de Bien-être</title>
+    <title>Une Parenthèse de Bien-être</title>
 
-<link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
 
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
 
 </head>
 
 <body>
 
-<!-- Fond animé -->
+    <!-- Fond animé -->
+    <div class="background"></div>
 
-<div class="background"></div>
+    <!-- Pétales -->
+    <div id="petals"></div>
 
-<div class="overlay"></div>
+    <!-- Confettis -->
+    <canvas id="confetti"></canvas>
 
-<!-- Pétales -->
+    <!-- ================= ENVELOPPE ================= -->
 
-<div id="petals"></div>
+    <section id="home">
 
-<!-- Confettis -->
+        <div class="intro">
 
-<canvas id="confetti"></canvas>
+            <h3>Une surprise t'attend...</h3>
 
-<!-- ===================== -->
+            <div id="envelope">
 
-<!-- ENVELOPPE -->
+                <div class="shadow"></div>
 
-<!-- ===================== -->
+                <div class="back"></div>
 
-<section id="home">
+                <div class="letter">
 
-<div class="center">
+                    <div class="letter-content">
 
-<div class="envelope">
+                        <h1>Une Parenthèse de Bien-être</h1>
 
-<div class="back"></div>
+                        <p>Clique pour découvrir ton invitation.</p>
 
-<div class="letter">
+                    </div>
 
-<div class="letter-content">
+                </div>
 
-<h1>
+                <div class="front"></div>
 
-Une Parenthèse de Bien-être
+                <div class="flap"></div>
 
-</h1>
+                <div class="seal">
 
-<p>
+                    ❤
 
-Une petite surprise t'attend...
+                </div>
 
-</p>
+            </div>
 
-</div>
+            <p class="click">
 
-</div>
+                Cliquer sur l'enveloppe
 
-<div class="front"></div>
+            </p>
 
-<div class="flap"></div>
+        </div>
 
-<div class="seal">
+    </section>
 
-❤
+    <!-- ================= INVITATION ================= -->
 
-</div>
+    <section id="invitation">
 
-</div>
+        <div class="card">
 
-<p class="clickText">
+            <div class="decor decor1"></div>
+            <div class="decor decor2"></div>
+            <div class="decor decor3"></div>
+            <div class="decor decor4"></div>
 
-Clique sur l'enveloppe
+            <h1>
 
-</p>
+                Une Parenthèse de Bien-être
 
-</div>
+            </h1>
 
-</section>
+            <h2>
 
-<!-- ===================== -->
+                Avant le grand jour...
 
-<!-- INVITATION -->
+            </h2>
 
-<!-- ===================== -->
+            <div class="line"></div>
 
-<section id="invitation">
+            <p>
 
-<div class="card">
+                Parce que tu mérites de prendre un moment pour toi avant cette merveilleuse nouvelle étape de ta vie, une petite surprise t'attend.
 
-<div class="corner tl"></div>
+                <br><br>
 
-<div class="corner tr"></div>
+                Nous souhaitons t'offrir une parenthèse de détente, de sérénité et de bien-être afin que tu puisses profiter pleinement d'un instant rien qu'à toi avant le grand jour.
 
-<div class="corner bl"></div>
+                <br><br>
 
-<div class="corner br"></div>
+                Nous espérons que cette journée te permettra de te ressourcer, de te relaxer et d'aborder cette belle aventure avec encore plus de bonheur.
 
-<h1>
+                <br><br>
 
-Une Parenthèse de Bien-être
+                Nous avons hâte de te voir profiter de ce moment que nous avons préparé avec beaucoup d'affection ❤️
 
-</h1>
+            </p>
 
-<h2>
+            <div class="details">
 
-Avant le grand jour...
+                <div class="box">
 
-</h2>
+                    <span>📅</span>
 
-<div class="divider"></div>
+                    <strong>01 Août 2026</strong>
 
-<p class="text">
+                </div>
 
-Parce que tu mérites de prendre un moment pour toi avant cette merveilleuse nouvelle étape de ta vie, une petite surprise t'attend.
+                <div class="box">
 
-<br><br>
+                    <span>🕦</span>
 
-Nous souhaitons t'offrir une parenthèse de détente, de sérénité et de bien-être afin que tu puisses profiter pleinement d'un instant rien qu'à toi avant le grand jour.
+                    <strong>11:30</strong>
 
-<br><br>
+                </div>
 
-Nous espérons que cette journée te permettra de te ressourcer, de te relaxer et d'aborder cette belle aventure avec encore plus de bonheur.
+            </div>
 
-<br><br>
+            <a
 
-Nous avons hâte de te voir profiter de ce moment que nous avons préparé avec beaucoup d'affection.
+                class="location"
 
-</p>
+                target="_blank"
 
-<div class="infoBox">
+                href="https://maps.app.goo.gl/46e7M4hnXxzykqfE9">
 
-<div>
+                📍 Voir l'itinéraire
 
-📅
+            </a>
 
-<strong>
+            <div id="countdown">
 
-01 août 2026
+                <div>
 
-</strong>
+                    <span id="days">00</span>
 
-</div>
+                    <small>Jours</small>
 
-<div>
+                </div>
 
-🕦
+                <div>
 
-<strong>
+                    <span id="hours">00</span>
 
-11:30
+                    <small>Heures</small>
 
-</strong>
+                </div>
 
-</div>
+                <div>
 
-</div>
+                    <span id="minutes">00</span>
 
-<a
+                    <small>Minutes</small>
 
-class="map"
+                </div>
 
-target="_blank"
+                <div>
 
-href="https://maps.app.goo.gl/46e7M4hnXxzykqfE9">
+                    <span id="seconds">00</span>
 
-📍 Voir l'itinéraire
+                    <small>Secondes</small>
 
-</a>
+                </div>
 
-<div id="countdown">
+            </div>
 
-<div>
+            <div class="question">
 
-<span id="days">0</span>
+                Acceptes-tu cette petite surprise ?
 
-<small>Jours</small>
+            </div>
 
-</div>
+            <div class="buttons">
 
-<div>
+                <button id="yes">
 
-<span id="hours">0</span>
+                    ❤️ Avec plaisir
 
-<small>Heures</small>
+                </button>
 
-</div>
+                <button id="no">
 
-<div>
+                    🙈 Non
 
-<span id="minutes">0</span>
+                </button>
 
-<small>Minutes</small>
+            </div>
 
-</div>
+        </div>
 
-<div>
+    </section>
 
-<span id="seconds">0</span>
+    <!-- ================= MERCI ================= -->
 
-<small>Secondes</small>
+    <section id="success">
 
-</div>
+        <div class="thanks">
 
-</div>
+            <h1>
 
-<h3>
+                Merci ❤️
 
-Acceptes-tu ce cadeau ?
+            </h1>
 
-</h3>
+            <p>
 
-<div class="buttons">
+                Nous sommes ravis que tu acceptes cette petite surprise.
 
-<button id="yes">
+                <br><br>
 
-❤️ Avec plaisir
+                Nous espérons que cette parenthèse de bien-être t'apportera toute la sérénité nécessaire avant le grand jour.
 
-</button>
+                <br><br>
 
-<button id="no">
+                À très bientôt !
 
-🙈 Non
+            </p>
 
-</button>
+        </div>
 
-</div>
+    </section>
 
-</div>
-
-</section>
-
-<!-- ===================== -->
-
-<!-- MERCI -->
-
-<!-- ===================== -->
-
-<section id="success">
-
-<div class="thanks">
-
-<h1>
-
-Merci ❤️
-
-</h1>
-
-<p>
-
-Nous sommes ravis que tu acceptes cette petite surprise.
-
-<br><br>
-
-Nous espérons que cette journée de détente te fera le plus grand bien.
-
-<br><br>
-
-À très bientôt.
-
-</p>
-
-</div>
-
-</section>
-
-<script src="script.js"></script>
+    <script src="script.js"></script>
 
 </body>
 
