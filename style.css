@@ -1,4 +1,8 @@
 /*=====================================================
+        INVITATION SPA PREMIUM
+        STYLE.CSS - PARTIE 1
+======================================================*/
+
 /************* RESET *************/
 
 *{
@@ -166,7 +170,7 @@ body{
 
     right:22px;
 
-    bottom:-150px;
+    bottom:18px;
 
     height:245px;
 
@@ -174,13 +178,15 @@ body{
 
     border-radius:10px;
 
+    z-index:2;
+
     overflow:hidden;
 
     transition:1.2s ease;
 
-    box-shadow:0 12px 30px rgba(0,0,0,.15);
+    box-shadow:
 
-    z-index:2;
+    0 12px 30px rgba(0,0,0,.15);
 
 }
 
@@ -264,13 +270,13 @@ body{
 
     bottom:0;
 
-    height:300px;          /* toute la hauteur */
+    height:175px;
 
     background:#e5c9a5;
 
-    clip-path:polygon(0 35%,50% 75%,100% 35%,100% 100%,0 100%);
+    clip-path:polygon(0 0,50% 75%,100% 0,100% 100%,0 100%);
 
-    z-index:12;
+    z-index:8;
 
 }
 
@@ -356,7 +362,7 @@ body{
 
 #envelope.open .letter{
 
-    transform:translateY(-260px);
+    transform:translateY(-185px);
 
     z-index:15;
 
@@ -383,6 +389,7 @@ body{
 100%{transform:scale(1);}
 
 }
+
 /*=====================================================
         STYLE.CSS - PARTIE 2
         CARTE D'INVITATION
@@ -796,7 +803,6 @@ body{
     }
 
 }
-
 
 /*=====================================================
         STYLE.CSS - PARTIE 3
